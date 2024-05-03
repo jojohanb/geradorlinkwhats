@@ -6,6 +6,7 @@
     <title>Gerador De Link</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="/gerador/script.js"></script>
     <style>
         *{
             box-sizing: border-box;
@@ -41,6 +42,26 @@
             padding: 10px;
         }
 
+        @media screen and (max-width: 767px) {
+            .container{
+                height: auto; 
+                width: 80vw; 
+                padding: 20px;    
+            }
+            input {
+                width: calc(100% - 20px); 
+                margin-bottom: 10px;
+            }
+            button {
+                width: calc(50% - 10px); 
+            }
+            body{
+                background-color: rgb(93, 161, 97);
+            }
+        }
+
+
+
     </style>
 </head>
 <body>
@@ -48,8 +69,8 @@
        <h1>Gerador De Link  <img src="/gerador/whatsapp.svg" ></h1>
         <div>
             <input type="text" placeholder="Telefone" id="input" style="border: 2px solid black; border-radius: 5px;">
-            <button style="border: 2px solid black; border-radius: 5px;"><i class="fas fa-link"></i></button>
-            <button style="border: 2px solid black; border-radius: 5px;"><i class="fas fa-paper-plane"></i></button>
+            <button id="link" style="border: 2px solid black; border-radius: 5px; background-color: green;" ><i style="color: white;" class="fas fa-link"></i></button>
+            <button id="copiar" style="border: 2px solid black; border-radius: 5px; background-color: green;"><i style="color: white;" class="fas fa-paper-plane"></i></button>
         </div>
     </div>
     
