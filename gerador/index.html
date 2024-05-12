@@ -6,7 +6,6 @@
     <title>Gerador De Link</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <script src="/gerador/script.js"></script>
     <style>
         *{
             box-sizing: border-box;
@@ -56,7 +55,7 @@
                 width: calc(50% - 10px); 
             }
             body{
-                background-color: rgb(93, 161, 97);
+                background-color:rgb(35, 124, 35);
             }
         }
 
@@ -68,11 +67,11 @@
     <div class="container">
        <h1>Gerador De Link  <img src="/gerador/whatsapp.svg" ></h1>
         <div>
-            <input type="text" placeholder="Telefone" id="input" style="border: 2px solid black; border-radius: 5px;">
+            <input maxlength="11" minlength="11" type="text"  placeholder="Telefone" id="input" style="border: 2px solid black; border-radius: 5px;">
             <button id="link" style="border: 2px solid black; border-radius: 5px; background-color: green;" ><i style="color: white;" class="fas fa-link"></i></button>
-            <button id="copiar" style="border: 2px solid black; border-radius: 5px; background-color: green;"><i style="color: white;" class="fas fa-paper-plane"></i></button>
+            <button id="enviar" style="border: 2px solid black; border-radius: 5px; background-color: green;"><i style="color: white;" class="fas fa-paper-plane"></i></button>
         </div>
     </div>
-    
+    <script src="/gerador/script.js"></script>
 </body>
 </html>
