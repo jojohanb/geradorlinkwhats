@@ -8,10 +8,10 @@ input.addEventListener("input", validarTelefone);
 function validarTelefone(event) {
     var telefone = event.target.value;
     var validaTelefone = /^[\d()-\s]+$/;
-    var digitos = telefone.replace(/\D/g, "");
+    var digitos = telefone.replace(/\D/g, ""); 
 
-    if (!validaTelefone.test(telefone)) {
-        alert("Preencha o campo corretamente com 11 dígitos!");
+    if (!validaTelefone.test(telefone))  { 
+        alert("Por Favor, preencha o campo corretamente com 11 dígitos!");
         event.target.value = telefone.slice(0, -1);
         return;
     }
