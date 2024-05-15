@@ -41,7 +41,7 @@
         }
 
         #input-container {
-             text-align: center; 
+            text-align: center; 
              margin-top: 20px;
         }
 
@@ -49,7 +49,7 @@
             padding: 10px;
             border: 1px solid black;
             border-radius: 5px;
-            display: none;
+            /* display: none;  */
             width: 265px;
         }
 
@@ -71,10 +71,11 @@
             }
 
             #input2 {
-                width: calc(100% - 20px);
-                max-width: none;
-            }
+                padding: 14px;
+                user-select: none;
+                width: 258px;
             
+            } 
 
         }
 
@@ -86,12 +87,14 @@
        <h1>Gerador De Link  <img src="/gerador/whatsapp.svg" ></h1>
         <div>
             <input maxlength="11" minlength="11" type="text"  placeholder="Telefone" id="input" style="border: 2px solid black; border-radius: 5px;">
-            <button id="link" style="border: 2px solid black; border-radius: 5px; background-color: green;" ><i style="color: white;" class="fas fa-link"></i></button>
-            <button id="enviar" style="border: 2px solid black; border-radius: 5px; background-color: green;"><i style="color: white;" class="fas fa-paper-plane"></i></button>
-        </div>
 
-        <div id="input-container">
-        <input type="text" id="input2">
+            <button onclick="gerarLink()" id="link" style="border: 2px solid black; border-radius: 5px; background-color: green;" ><i style="color: white;" class="fas fa-link"></i></button>
+
+            <button id="enviar" style="border: 2px solid black; border-radius: 5px; background-color: green;"><i style="color: white;" class="fas fa-paper-plane"></i></button>
+            <br>
+            <br>
+
+            <div id="input2"></div>
         </div>
     </div>
     <script src="/gerador/script.js"></script>
