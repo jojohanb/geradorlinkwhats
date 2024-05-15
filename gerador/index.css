@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: green;
+}
+
+button{
+    cursor: pointer;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    width:  35vw;
+    height: 25vh;
+    gap: 15px;
+}
+
+#whats{
+    height: 25px;
+}
+
+#input-telefone{
+    width: 200px;
+    border: 2px solid black;
+    border-radius: 5px;
+    height: 35px;
+}
+
+#copiar{
+    width: 33px;
+    height: 35px;
+    color: white;
+    background-color: green;
+    border-radius: 5px;
+
+}
+
+#enviar{
+    width: 33px;
+    height: 35px;
+    color: white;
+    background-color: green;
+    border-radius: 5px;
+}
+
+#area-link{
+    border: 2px solid black;
+    width: 285px;
+    height: 25px;
+    border-radius: 5px;
+    display: none; 
+}
+#texto{
+    display: none;
+}
+
+/* @media screen and (max-width: 767px) { */
+    /* .container{
+        height: auto; 
+        width: 80vw; 
+        padding: 20px;
+    }
+    #input-telefone{
+        width: 360px;
+        height: 30px;
+    }
+
+    #enviar{
+        width: 177px;
+    }
+    #copiar{
+        width: 180px;
+    }
+    
+    body{
+        background-color:green;
+    }
+
+    #area-link{
+        width: 356px;
+    }
+} */
