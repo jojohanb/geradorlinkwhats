@@ -1,3 +1,25 @@
+var copiar = document.getElementById("copiar")
+var areaLink = document.getElementById("area-link")
+var texto = document.getElementById("texto")
+
+copiar.addEventListener("click", function(){
+  if (areaLink.style.display=="none"){
+      areaLink.style.display="inline"
+      texto.style.display="inline"
+  } else{
+    areaLink.style.display="none"
+    texto.style.display="none"
+  }
+})
+
+
+
+
+
+
+
+
+
 //var input = document.getElementById("input")
 //var link = document.getElementById("link")
 //var enviar = document.getElementById("enviar")
