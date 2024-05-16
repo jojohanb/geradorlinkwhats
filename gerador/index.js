@@ -8,19 +8,13 @@ var enviar = document.getElementById("enviar");
 
 //adicionando eventos
 inputTelefone.addEventListener("input", validarTelefone);
-// copiar.addEventListener("click", gerarLink);
+copiar.addEventListener("click", function() {
+  gerarLink();
+  visibilidade();
+});
 
- copiar.addEventListener("click", function(){
-   if (areaLink.style.display=="none"){
-       areaLink.style.display="inline"
-       texto.style.display="inline"
-   } else{
-     areaLink.style.display="none"
-     texto.style.display="none"
-   }
- });
 
-//funcoes
+//adicionando as funcoes
 
 function validarTelefone(event) {
   var telefone = event.target.value;
@@ -45,39 +39,32 @@ function validarTelefone(event) {
 }
 
 
-// function gerarLink() {
-//   var telefone = inputTelefone.value;
-//   var digitos = telefone.replace(/\D/g, ""); 
-
-//   if (digitos.length === 11) {
-//       var link = "https://wa.me/55" + digitos;
-//       areaLink.innerHTML = `<a href="${link}" target="_blank">${link}</a>`;
-//       areaLink.style.display = "inline";
-//       texto.style.display = "inline";
-//   } else {
-//       alert("Por favor, insira um número de telefone válido.");
-//   }
-// }
+function visibilidade() {
+  if (areaLink.style.display=="none") {
+      areaLink.style.display="inline"
+      texto.style.display="inline"
+  } else {
+    areaLink.style.display="none"
+    texto.style.display="none"
+  };
+}
 
 
+ function gerarLink() {
+   var telefone = inputTelefone.value;
+   var digitos = telefone.replace(/\D/g, ""); 
+
+   if (digitos.length === 11) {
+       var link = "https://wa.me/55" + digitos;
+       areaLink.innerHTML = `<a href="${link}" target="_blank">${link}</a>`;
+   } else {
+       alert("Por favor, insira um número de telefone válido.");
+       areaLink.style.display = "none";
+       texto.style.display = "none";
+    }
+ }
 
 
-
-
-//var input = document.getElementById("input")
-//var link = document.getElementById("link")
-//var enviar = document.getElementById("enviar")
-//var input2 = document.getElementById("input2")
-
-//document.getElementById('link').addEventListener('click', function() {
-//    var Input2 = document.getElementById('input2');
-//    Input2.style.display = Input2.style.display === 'none' ? 'block' : 'none'; //
-//});
-
-
-//input.addEventListener("input", validarTelefone);
-//input2.addEventListener("input", copiarLink());
-//link.addEventListener("click", gerarLink())
 
 
 //function copiarLink(){
