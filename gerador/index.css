@@ -64,7 +64,7 @@ button{
     width: 285px;
     height: 25px;
     border-radius: 5px;
-    display: none;
+    display: none; 
 }
 #texto{
     display: none; 
