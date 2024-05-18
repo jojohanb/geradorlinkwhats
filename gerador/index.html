@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gerador De Link</title>
     <link rel="stylesheet" href="/gerador/index.css">
-    <link rel="shortcut icon" href="/gerador/whatsapp.svg" type="image/x-icon">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="shortcut icon" href="/gerador/whatsapp.svg" type="image/x-icon"> <!--FAVICON -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"><!--ICONES -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"><!--ICONES -->
+
 </head>
 <body>
+
     <div class="container">
         <h1>Gerador De Link <img id="whats" src="/gerador/whatsapp.svg" alt=""></h1>
         <div>
@@ -21,110 +24,9 @@
         <p id="texto">Clique No Link Para Copiar</p>
     </div>
     <script src="/gerador/index.js"></script>
+
+    <!-- CONCLUIDO -->
+
 </body>
 </html>
 
-
-
-<!-- <!DOCTYPE html> 
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gerador De Link</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <style>
-        *{
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-        body{
-            background-color: rgb(35, 124, 35);
-            display: flex;
-            width: 100vw;
-            height: 100vh;
-            justify-content: center;
-            align-items: center;
-        }
-        .container{
-            background-color: white;
-            height: 25vh;
-            width: 35vw;
-            border-radius: 10px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-        img{
-            width: 25px;
-        }
-        button{
-            padding: 10px
-        }
-        input{
-            padding: 10px;
-        }
-
-        #input-container {
-            text-align: center; 
-             margin-top: 20px;
-        }
-
-        #input2 {
-            padding: 10px;
-            border: 1px solid black;
-            border-radius: 5px;
-            /* display: none;  */
-            width: 265px;
-        }
-
-        @media screen and (max-width: 767px) {
-            .container{
-                height: auto; 
-                width: 80vw; 
-                padding: 20px;    
-            }
-            input {
-                width: calc(100% - 20px); 
-                margin-bottom: 10px;
-            }
-            button {
-                width: calc(50% - 10px); 
-            }
-            body{
-                background-color:rgb(35, 124, 35);
-            }
-
-            #input2 {
-                padding: 14px;
-                user-select: none;
-                width: 258px;
-            
-            } 
-
-        }
-
-
-    </style>
-</head>
-<body>
-    <div class="container">
-       <h1>Gerador De Link  <img src="/gerador/whatsapp.svg" ></h1>
-        <div>
-            <input maxlength="11" minlength="11" type="text"  placeholder="Telefone" id="input" style="border: 2px solid black; border-radius: 5px;">
-
-            <button onclick="gerarLink()" id="link" style="border: 2px solid black; border-radius: 5px; background-color: green;" ><i style="color: white;" class="fas fa-link"></i></button>
-
-            <button id="enviar" style="border: 2px solid black; border-radius: 5px; background-color: green;"><i style="color: white;" class="fas fa-paper-plane"></i></button>
-            <br>
-            <br>
-
-            <div id="input2"></div>
-        </div>
-    </div>
-    <script src="/gerador/script.js"></script>
-</body>
-</html>
